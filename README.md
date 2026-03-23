@@ -49,15 +49,6 @@ I am currently mastering **Concurrency and Parallelism** in Python to understand
 ---
 
 ## 🤝 Contact & Collaboration
-* **LinkedIn:** [Your Link]
-* **Portfolio:** [Your Website]
-* **Email:** [Your Email]
-
----
-
-### **How to make this truly "Impressive":**
-1.  **Add a `requirements.txt` or `pyproject.toml`:** This shows you know how to manage environments (crucial for professional work).
-2.  **Use Type Hinting:** Recruiters love seeing `def process_data(data: list[int]) -> dict:`. It shows you write "Adult Python."
-3.  **Include a "Tests" Folder:** Even if it’s just 2 or 3 PyTest files, it puts you in the top 5% of junior applicants.
-
-Would you like me to generate a specific **Python script** (like a Web Scraper or a Data Analyzer) that you can include as your first "Featured Project" in this README?
+* **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/kevin-carter-software-engineer/)
+* **Portfolio:** [Portfolio](https://kevin-carter.netlify.app/)
+* **Email:** [console.logkevin@gmail.com](mailto:console.logkevin@gmail.com)
