@@ -1,4 +1,3 @@
-name = "abc lovelace"
-work = "Home Depot"
-full_sentence = f"{name}  works at {work}."
-print(full_sentence)
+name = "There is no other name"
+
+print(f"{name.upper()}:\n\tPeter\n\tJohn\n\tThomas")
