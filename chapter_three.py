@@ -1,6 +1,7 @@
 # Chapter 3 
 last_supper = ['john', 'peter', 'judas', 'nicodemus']
 
+'''
 for disciple in last_supper:
     print(f"\n######### --- Message Sent @ 10:00AM 3/25/2026 \n\nHello, my dear beloved one {disciple.title()}\n\n")
 # 
@@ -28,7 +29,6 @@ for disciple in last_supper:
 while len(last_supper) > 2:
     del last_supper[-1]
     print(last_supper)
-
 for disciple in last_supper:
     print(f"\n######### --- Message Sent @ 11:31AM 3/25/2026 \n\nThanks {disciple.title()} for coming tonight, see you there!\n\n")
 
@@ -36,3 +36,32 @@ for disciple in last_supper:
 del last_supper[-1]
 del last_supper[-1]
 print(last_supper, "supper over, it's finished!")
+'''
+
+# Sort method
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort(reverse=True)
+# print(cars)
+
+# print(f"\nHere is a list that is not sorted:\n{cars}\n\n")
+# print(f"Here is a list that is sorted:\n{sorted(cars)}\n\n")
+# print(f"Here is a list AFTER sort:\n{cars}")
+
+# length of lists
+# print(len(cars))
+
+# Places I would like to visit
+vacay = ['the maldieves', 'london', 'japan', 'barcelona', 'vancouver']
+print(vacay)
+print(sorted(vacay))
+print(vacay)
+vacay.sort(reverse=True)
+print(vacay)
+vacay.sort(reverse=True)
+print(vacay)
+vacay.sort()
+print(vacay)
+vacay.sort(reverse=True)
+print(vacay)
+
+print(len(last_supper))
