@@ -33,7 +33,37 @@ print(squares)
 print(min(squares))
 print(max(squares))
 print(sum(squares))
-'''
 
+# list comprehension
 squares = [value**2 for value in range(1, 11)]
 print(squares)
+
+# counting by 12
+twelves = list(range(0, 20, 12))
+print(twelves)
+
+# count to 1 million 
+million = list(range(1, 1000001))
+print(million)
+print(min(million))
+print(max(million))
+print(sum(million))
+
+one_to_twenty = list(range(1, 21, 2))
+for odd in one_to_twenty:
+    print(odd)
+
+# list of three
+list_three = list(range(3, 31, 3))
+print(list_three)
+
+# power of cube 
+cube_list = list(range(1,11))
+for cube in cube_list:
+    print(cube ** 3)
+'''
+
+# list comprehension
+
+cube_comp = [cube**3 for cube in range(1, 11)]
+print(cube_comp)
