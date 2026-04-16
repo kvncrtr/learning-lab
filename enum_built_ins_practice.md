@@ -1,4 +1,4 @@
-Phase 1: Direct enumerate() Usage (Foundation)
+<!-- Phase 1: Direct enumerate() Usage (Foundation)
 
 These force you to use enumerate() correctly.
 
@@ -53,7 +53,7 @@ What this trains
 collecting multiple positions
 Phase 2: Real DSA Patterns (Critical)
 
-Now you apply enumerate() inside real patterns.
+Now you apply enumerate() inside real patterns. -->
 
 5. Contains Duplicate
 
@@ -70,6 +70,7 @@ Use enumerate() (even if not strictly required)
 What this trains
 
 membership checks + iteration
+
 6. Two Sum (MUST MASTER)
 
 Prompt
