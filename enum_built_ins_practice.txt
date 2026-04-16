@@ -1,0 +1,210 @@
+Phase 1: Direct enumerate() Usage (Foundation)
+
+These force you to use enumerate() correctly.
+
+1. Find First Occurrence
+
+Prompt
+
+def find_index(nums, target):
+    # return index of target or -1
+
+Constraint
+
+Must use enumerate()
+
+What this trains
+
+index + value pairing
+2. Print Even Index Values
+
+Prompt
+
+nums = [10, 15, 20, 25, 30]
+
+# print values at even indexes only
+
+What this trains
+
+using index from enumerate() for filtering
+3. Build Index Map
+
+Prompt
+
+def build_index_map(nums):
+    # return {value: index}
+
+Example
+
+[4, 7, 1] → {4:0, 7:1, 1:2}
+
+What this trains
+
+hash map + enumerate (CORE DSA PATTERN)
+4. Find All Matching Indexes
+
+Prompt
+
+def find_all_indexes(nums, target):
+    # return list of all indexes where target appears
+
+What this trains
+
+collecting multiple positions
+Phase 2: Real DSA Patterns (Critical)
+
+Now you apply enumerate() inside real patterns.
+
+5. Contains Duplicate
+
+Prompt
+
+def contains_duplicate(nums):
+    # return True if any value appears twice
+
+Constraint
+
+Use a set
+Use enumerate() (even if not strictly required)
+
+What this trains
+
+membership checks + iteration
+6. Two Sum (MUST MASTER)
+
+Prompt
+
+def two_sum(nums, target):
+    # return indices of two numbers that add up to target
+
+Constraint
+
+Must use enumerate()
+Must use a dictionary
+
+What this trains
+
+hashmap + index tracking (TOP 5 pattern)
+7. First Unique Character (String)
+
+Prompt
+
+def first_unique_char(s):
+    # return index of first non-repeating character
+
+What this trains
+
+Counter + enumerate()
+string as array
+Phase 3: Force Decision (enumerate vs range)
+
+Now you must decide which to use.
+
+8. Reverse Array In-Place
+
+Prompt
+
+def reverse(nums):
+    # modify list in place
+
+Hint
+
+You need swapping
+
+Correct choice
+
+range(len()) or two pointers
+NOT enumerate()
+9. Maximum Profit (Stock Problem)
+
+Prompt
+
+def max_profit(prices):
+    # buy low, sell high once
+
+Hint
+
+track min price and profit
+
+Decision
+
+either works, but enumerate() is cleaner
+10. Palindrome Check
+
+Prompt
+
+def is_palindrome(s):
+    # return True if string is palindrome
+
+Hint
+
+compare left and right
+
+Correct choice
+
+range(len()) (index math required)
+Phase 4: Debugging (High Value Skill)
+
+These expose mistakes.
+
+11. What’s Wrong Here?
+nums = [1,2,3,4]
+
+for i, num in enumerate(nums):
+    nums.remove(num)
+
+Question
+
+Why does this break?
+12. Fix This Code
+for i in range(len(nums)):
+    if nums[i] == target:
+        nums.remove(nums[i])
+
+Question
+
+Why is this unsafe?
+Rewrite safely
+Phase 5: Active Recall (Lock It In)
+
+Answer these without coding:
+
+1.
+
+When solving Two Sum:
+
+Why is enumerate() better than range(len())?
+2.
+
+You need to compare nums[i] and nums[i+1].
+
+Which do you use and why?
+3.
+
+You are building {value: index}
+
+Which tool is optimal?
+4.
+
+You are modifying values in place by index.
+
+Which tool is required?
+Execution Strategy (Do This Exactly)
+Day 1
+Questions 1–4
+Day 2
+Questions 5–7
+Day 3
+Questions 8–10
+Day 4
+Debugging + Active Recall
+What Mastery Looks Like
+
+You’re ready for interviews when:
+
+you default to enumerate() automatically
+you switch to range(len()) only when index math is required
+you can explain why in 1 sentence
+
+If you want next:
+I can walk you through solving Two Sum step-by-step like an interview, and force you to think instead of memorize.
