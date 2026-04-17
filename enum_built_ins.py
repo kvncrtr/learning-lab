@@ -58,13 +58,66 @@
 
 # print(find_all_indexes(nums_2, 30))
 
+# # 1-5 Find Dups
+# nums_3 = [7, 2, 9, 4, 7, 6, 2, 8, 5]
 
+# def contains_duplicate(nums):
+#     seen = set()
 
+#     for i, val in enumerate(nums):
+#         if val in seen:
+#             return True
+#         seen.add(val)
+#         print(seen)
+#     # return False
 
+# result = contains_duplicate(nums_3)
+# print(result)
 
+# # 1-6 Two Sum
+# # return number of UNIQUE pairs that sum to target
+# nums_4 = [1, 3, 2, 2, 4, 0, 5, 3]
 
+# def two_sum(nums, target):
+#     seen = set()
+#     pairs = set()
 
+#     for i, val in enumerate(nums):
+#         comp = target - val
 
+#         if comp in seen:
+#             pair = tuple(sorted((val, comp)))
+#             pairs.add(pair)
+
+#         seen.add(val)
+
+#     return len(pairs)
+        
+# result = two_sum(nums_4, 5)
+# print(result)
+
+# # 1-7. First Unique Character (String)
+# # return char of first non-repeating character
+
+# def first_unique_char(s):
+#     seen = {}
+
+#     for i, val in enumerate(s):
+#         if val not in seen:
+#             seen[val] = [1, i]
+#         else:
+#             seen[val][0] += 1
+    
+#     for i, val in enumerate(s):
+#         if seen[val][0] == 1:
+#             return val
+        
+#     return -1
+
+# print(first_unique_char('swiss'))
+# print(first_unique_char('leetcode'))
+# print(first_unique_char('aabbcc'))
+# print(first_unique_char('cevin carter'))
 
 
 

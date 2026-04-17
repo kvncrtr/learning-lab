@@ -53,7 +53,7 @@ What this trains
 collecting multiple positions
 Phase 2: Real DSA Patterns (Critical)
 
-Now you apply enumerate() inside real patterns. -->
+Now you apply enumerate() inside real patterns.
 
 5. Contains Duplicate
 
@@ -69,7 +69,8 @@ Use enumerate() (even if not strictly required)
 
 What this trains
 
-membership checks + iteration
+membership checks + iteration 
+
 
 6. Two Sum (MUST MASTER)
 
@@ -86,6 +87,8 @@ Must use a dictionary
 What this trains
 
 hashmap + index tracking (TOP 5 pattern)
+-->
+
 7. First Unique Character (String)
 
 Prompt
@@ -97,6 +100,7 @@ What this trains
 
 Counter + enumerate()
 string as array
+
 Phase 3: Force Decision (enumerate vs range)
 
 Now you must decide which to use.
