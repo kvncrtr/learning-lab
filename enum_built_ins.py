@@ -119,10 +119,39 @@
 # print(first_unique_char('aabbcc'))
 # print(first_unique_char('cevin carter'))
 
+# # 1-8
+# # You need swapping Correct choice
 
+# nums_5 = [1, 3, 2, 2, 4, 0, 5, 3]
+# left = 0
+# right = len(nums_5) - 1
 
+# while left < right:
+#     nums_5[left], nums_5[right] = nums_5[right], nums_5[left]
+#     left += 1
+#     right -= 1
 
+# print(nums_5)
 
+# 1-9
+# Maximum Profit (Stock) Buy once, sell once → maximize profit
+prices = [300, 500, 11000, 7000, 2000]
+
+def max_profit(prices):
+    min_price = prices[0]
+    max_price = 0
+
+    for i, val in enumerate(prices):
+        if val < min_price:
+            min_price = val
+        else:
+            profit = val - min_price
+            max_profit = max(max_profit, profit)
+
+    return max_price - min_price
+
+roi = max_profit(prices)
+print(roi)
 
 # Built-In Methods
 # print(len(nums))

@@ -87,7 +87,6 @@ Must use a dictionary
 What this trains
 
 hashmap + index tracking (TOP 5 pattern)
--->
 
 7. First Unique Character (String)
 
@@ -120,6 +119,8 @@ Correct choice
 
 range(len()) or two pointers
 NOT enumerate()
+-->
+
 9. Maximum Profit (Stock Problem)
 
 Prompt
@@ -134,6 +135,7 @@ track min price and profit
 Decision
 
 either works, but enumerate() is cleaner
+
 10. Palindrome Check
 
 Prompt
@@ -161,6 +163,7 @@ for i, num in enumerate(nums):
 Question
 
 Why does this break?
+
 12. Fix This Code
 for i in range(len(nums)):
     if nums[i] == target:
