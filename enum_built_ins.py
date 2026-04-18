@@ -170,5 +170,14 @@
 
 # print(is_palindrome_check('koren'))
 
+# 1-11 What’s Wrong Here?
+nums = [1,2,3,4]
+
+for i, num in enumerate(nums):
+    nums.remove(num)
+    
+# Why does this break?
+# List is shrinking + indices are shifting while loop is advancing
+
 # Built-In Methods racecar
 # print(len(nums))
