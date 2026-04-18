@@ -133,25 +133,42 @@
 
 # print(nums_5)
 
-# 1-9
-# Maximum Profit (Stock) Buy once, sell once → maximize profit
-prices = [300, 500, 11000, 7000, 2000]
+# # 1-9
+# # Maximum Profit (Stock) Buy once, sell once → maximize profit
+# prices = [300, 500, 11000, 7000, 2000]
 
-def max_profit(prices):
-    min_price = prices[0]
-    max_price = 0
+# def max_profit(prices):
+#     min_price = prices[0]
+#     max_price = 0
 
-    for i, val in enumerate(prices):
-        if val < min_price:
-            min_price = val
-        else:
-            profit = val - min_price
-            max_profit = max(max_profit, profit)
+#     for i, val in enumerate(prices):
+#         if val < min_price:
+#             min_price = val
+#         else:
+#             profit = val - min_price
+#             max_profit = max(max_profit, profit)
 
-    return max_price - min_price
+#     return max_price - min_price
 
-roi = max_profit(prices)
-print(roi)
+# roi = max_profit(prices)
+# print(roi)
 
-# Built-In Methods
+# # 1-10 Is Palindrome Check
+# def is_palindrome_check(s):
+#     left = 0
+#     right = len(s) - 1
+#     rev_str = ''
+
+#     for i, val in enumerate(s):
+#         print(val, rev_str)
+#         rev_str = val + rev_str
+        
+#     if rev_str == s:
+#         return True
+    
+#     return False
+
+# print(is_palindrome_check('koren'))
+
+# Built-In Methods racecar
 # print(len(nums))

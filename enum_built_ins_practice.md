@@ -119,7 +119,6 @@ Correct choice
 
 range(len()) or two pointers
 NOT enumerate()
--->
 
 9. Maximum Profit (Stock Problem)
 
@@ -153,6 +152,7 @@ range(len()) (index math required)
 Phase 4: Debugging (High Value Skill)
 
 These expose mistakes.
+-->
 
 11. What’s Wrong Here?
 nums = [1,2,3,4]
