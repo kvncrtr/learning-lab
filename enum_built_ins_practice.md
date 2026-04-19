@@ -152,67 +152,139 @@ range(len()) (index math required)
 Phase 4: Debugging (High Value Skill)
 
 These expose mistakes.
+
+# 2. Python Built-ins (LeetCode essentials)
+
+You don’t need all built-ins. You need the **high-leverage ones**.
+
+---
+
+## A. Iteration + Structure
+
+### `len()`
+
+```python
+len(nums)
+```
+
+Used everywhere. O(1).
+
+---
+
+### `range()`
+
+```python
+for i in range(len(nums)):
+```
+
+Used when:
+
+* you need index only
+* or sliding window
+
+---
+
+### `enumerate()` ✅ (already covered)
+
+---
+
+## B. Collections (VERY IMPORTANT)
+
+### `set()`
+
+Fast lookups (O(1))
+
+```python
+nums = [1, 2, 3]
+seen = set(nums)
+
+if 2 in seen:
+    print("yes")
+```
+
+Use case:
+
+* duplicates
+* membership checks
+
+---
+
+### `dict()` (hash map)
+
+```python
+d = {}
+d["a"] = 1
+```
+
+Use case:
+
+* frequency count
+* index tracking
+* caching results
+
+---
+
+### `collections.Counter`
+
+```python
+from collections import Counter
+
+s = "aabbc"
+count = Counter(s)
+```
+
+Output:
+
+```
+{'a': 2, 'b': 2, 'c': 1}
+```
+
+Use case:
+
+* string frequency problems
+
+---
+
+## C. Useful Helpers
+
+### `sorted()`
+
+```python
+sorted(nums)
+```
+
+Used for:
+
+* comparing anagrams
+* ordering data
+
+---
+
+### `sum()`
+
+```python
+sum(nums)
+```
+
+---
+
+### `max()` / `min()`
+
+```python
+max(nums)
+min(nums)
+```
+
+---
 -->
 
-11. What’s Wrong Here?
-nums = [1,2,3,4]
+### `zip()`
 
-for i, num in enumerate(nums):
-    nums.remove(num)
+```python
+a = [1,2]
+b = [3,4]
 
-Question
+for x, y in zip(a, b):
+    print(x, y)
+```
 
-Why does this break?
-
-12. Fix This Code
-for i in range(len(nums)):
-    if nums[i] == target:
-        nums.remove(nums[i])
-
-Question
-
-Why is this unsafe?
-Rewrite safely
-Phase 5: Active Recall (Lock It In)
-
-Answer these without coding:
-
-1.
-
-When solving Two Sum:
-
-Why is enumerate() better than range(len())?
-2.
-
-You need to compare nums[i] and nums[i+1].
-
-Which do you use and why?
-3.
-
-You are building {value: index}
-
-Which tool is optimal?
-4.
-
-You are modifying values in place by index.
-
-Which tool is required?
-Execution Strategy (Do This Exactly)
-Day 1
-Questions 1–4
-Day 2
-Questions 5–7
-Day 3
-Questions 8–10
-Day 4
-Debugging + Active Recall
-What Mastery Looks Like
-
-You’re ready for interviews when:
-
-you default to enumerate() automatically
-you switch to range(len()) only when index math is required
-you can explain why in 1 sentence
-
-If you want next:
-I can walk you through solving Two Sum step-by-step like an interview, and force you to think instead of memorize.

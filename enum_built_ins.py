@@ -170,14 +170,118 @@
 
 # print(is_palindrome_check('koren'))
 
-# 1-11 What’s Wrong Here?
-nums = [1,2,3,4]
+# # 1-11 What’s Wrong Here?
+# nums = [1,2,3,4]
 
-for i, num in enumerate(nums):
-    nums.remove(num)
+# for i, num in enumerate(nums):
+#     nums.remove(num)
     
-# Why does this break?
-# List is shrinking + indices are shifting while loop is advancing
+# # Why does this break?
+# # List is shrinking + indices are shifting while loop is advancing
 
-# Built-In Methods racecar
-# print(len(nums))
+# # Python Built-ins (LeetCode essentials)
+# # 2-1 Print Length
+# nums = [10, 20, 30, 40]
+# length = len(nums)
+# last = nums[length - 1]
+# print(last)
+
+# # 2-2 Range and Length
+# nums_1 = [1, 2, 3, 4]
+# for i in range(len(nums_1)):
+#     print(f"index {i} and value {nums_1[i]}")
+
+# # 2-3 Reverse Loop
+# # print values in reverse using len()
+# nums_2 = [1, 2, 3, 4, 100, 44, 1345, 70]
+# for i in range(len(nums_2) - 1, -1, -1):
+#     print(f"index {i} value {nums_2[i]}")
+
+# # 2-4 Shrinking List
+# # remove last element until empty, print nums each step
+# nums_3 = [1, 2, 3, 4, 100, 44, 1345, 70]
+# print(nums_3)
+
+# for i in range(len(nums_3) - 1, -1, -1):
+#     nums_3.pop(i)
+#     print(nums_3)
+
+# # 2-5 Prevent Out of Bounds
+# # safely access nums[i+1] without error
+# nums_5 = [1, 2, 3]
+
+# for i in range(-1, len(nums_5) - 1):
+#     print(nums_5[i + 1])
+
+# for i, val in enumerate(nums_5):
+#     if i < len(nums_5) - 1:
+#         print(nums_5[i + 1])
+
+# # 2-6 Sets
+# # Contains Duplicate return True if any value appears at least twice
+# nums_6 = [1, 2, 3, 10]
+
+# def contains_duplicate(nums):
+#     seen = set()
+
+#     for i, val in enumerate(nums_6):
+#         if val not in seen:
+#             seen.add(val)
+#         else:
+#             return True
+        
+#     return False
+
+# print(contains_duplicate(nums_6))
+
+# # 2-7 Find First Duplicate Value
+# nums_7 = [1, 2, 3, 3, 4, 5, 6, 7]
+
+# def first_duplicate(nums):
+#     # return the first value that appears twice
+#     # if none, return -1
+#     seen = set()
+
+#     for i, val in enumerate(nums[:]):
+#         if val not in seen:
+#             seen.add(val)
+#         else:
+#             return print(val)
+
+# first_duplicate(nums_7)
+
+# # 2-8 Intersection of Two Arrays
+# # return unique common elements
+# nums1 = [1, 2, 2, 3]
+# nums2 = [2, 2, 4]
+
+# def intersection(nums1, nums2):
+#     set1 = set(nums1)
+#     set2 = set(nums2)
+
+#     result = []
+
+#     for val in set1:
+#         if val in set2:
+#             result.append(val)
+
+#     return result
+
+# result = intersection(nums1, nums2)    
+# print(result)    
+
+# # Missing Number
+# # nums contains n distinct numbers in range [0, n] return the missing number
+# nums_8 = [3, 0, 1]
+
+# def missing_number(nums):
+#     target = range(len(nums) + 1)
+#     seen = set(nums)
+
+#     for val in target:
+#         if val not in seen:
+#             return val
+
+
+# result = missing_number(nums_8)
+# print(result)
